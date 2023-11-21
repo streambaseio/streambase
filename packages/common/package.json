@@ -1,0 +1,13 @@
+{
+  "name": "@streambase/common",
+  "version": "0.0.1",
+  "author": "Streambase",
+  "description": "Streambase (@Common)",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streambaseio/streambase.git",
+    "directory": "packages/common"
+  }
+}

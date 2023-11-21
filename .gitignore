@@ -1,41 +1,47 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
-# compiled output
-dist
-tmp
-/out-tsc
-
 # dependencies
-node_modules
+node_modules/
 
-# IDEs and editors
+# IDE
 /.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+/.awcache
+/.vscode
+/.devcontainer
+*.code-workspace
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# bundle
+packages/**/*.d.ts
+packages/**/*.js
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
+.DS_Store
+lerna-debug.log
 npm-debug.log
 yarn-error.log
-testem.log
-/typings
+/**/npm-debug.log
+/packages/**/.npmignore
+/packages/**/LICENSE
+*.tsbuildinfo
 
-# System Files
-.DS_Store
-Thumbs.db
+# example
+/quick-start
+/example_dist
+/example
 
-.nx/cache
+# tests
+/test
+/benchmarks/memory
+/coverage
+/.nyc_output
+/packages/graphql
+/benchmarks/memory
+build/config\.gypi
+
+.npmrc
+pnpm-lock.yaml

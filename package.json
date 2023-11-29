@@ -1,6 +1,5 @@
 {
   "name": "@streambase/core",
-  "version": "0.0.1",
   "description": "Modern, fast, powerful tRPC framework",
   "homepage": "https://streambase.io",
   "repository": {
@@ -8,28 +7,18 @@
     "url": "https://github.com/streambaseio/streambase.git"
   },
   "license": "MIT",
-  "scripts": {
-    "tsc": "tsc -p tsconfig.json",
-    "build": "tsc -b -v packages",
-    "build:dev": "tsc -b -v packages --watch",
-    "prebuild:prod": "npm run clean",
-    "build:prod": "tsc -b -v packages",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "**/*.ts": [
-      "prettier --ignore-path ./.prettierignore --write"
-    ],
-    "packages/**/*.json": [
-      "prettier --ignore-path ./.prettierignore --write"
-    ]
-  },
-  "dependencies": {
-    "husky": "^8.0.3",
-    "typescipt": "^1.0.0",
-    "typescript": "^5.3.2"
+ 
+  "version": "alpha-0.0.1",
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": ["packages/*"],
+  "engines": {
+    "node": ">=20"
   },
   "devDependencies": {
-    "@types/node": "^20.9.3"
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.3.2"
   }
 }

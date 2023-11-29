@@ -1,0 +1,16 @@
+{
+  "name": "@streambase/core",
+  "version": "alpha-0.0.1",
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": ["packages/*"],
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
